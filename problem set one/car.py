@@ -10,8 +10,8 @@ class Car:
         self.distance += time * self.speed
 
     @classmethod
-    def from_speed(cls, speed):
-        return cls(speed)
+    def from_speed(cls, spd):
+        return cls(spd)
 
 
 truck = Car.from_speed(20)
