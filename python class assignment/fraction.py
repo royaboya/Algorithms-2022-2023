@@ -1,5 +1,3 @@
-# MV
-
 def gcd(a, b):
     return a if b == 0 else gcd(b, a % b)
 
@@ -27,9 +25,11 @@ class Fraction:
         common = gcd(self.num, self.den)
         self.num //= common
         self.den //= common
+
     @classmethod
     def unit_fraction(cls,den):
         return cls(1,den)
+        
     @classmethod
     def from_decimal(cls, decimal):
         _, dec_str = str(decimal).split(".")
