@@ -10,7 +10,7 @@ def main():
             # Add the new key-value pair to the dictionary.
             morse_code[ch] = new_code
         # Write a statement to add to encoded.
-        encoded += morse_code[ch]
+        encoded += morse_code[ch] + " "
     print("Morse code for " + english + " is " + encoded)
 
 
